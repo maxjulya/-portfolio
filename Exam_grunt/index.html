@@ -8,6 +8,7 @@
     <meta name="HandheldFriendly" content="true"/>
     <title>Urlaubsgluck</title>
     <link rel="stylesheet" href="css/application.css">
+    <link rel="stylesheet" href="css/prel.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.js"></script>
     <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
@@ -236,6 +237,11 @@
         </div>
     </footer>
 </div>
+<script>
+    $(window).on('load', function() {
+        $('.preloader').delay(200).fadeOut('fast');   
+    });
+</script>
 <script src="js/vendor/eventListener.polyfill.js"></script>
 </body>
 </html>
